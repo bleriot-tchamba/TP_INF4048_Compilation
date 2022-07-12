@@ -160,8 +160,8 @@ class Grammar():
 		for rule in self.productions:
 			if rule.is_unitary(self):
 				L_units_rule.append(rule)
-		print(L_units_rule)
-		print()
+		#print(L_units_rule)
+		#print()
 
 		#We transform all units rules and stock them in a list finals_rules
 		finals_rules = []

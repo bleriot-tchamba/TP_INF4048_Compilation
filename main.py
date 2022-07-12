@@ -1,5 +1,4 @@
 from classe import *
-from fonctions import *
 
 '''R1 = rule("S", ['A', 'B'])
 R2 = Rule("S", ['C', 'A'])
@@ -45,13 +44,12 @@ G6 = Grammar(['a','b'], ['A','B','S'], 'S', [R24,R25,R26,R27,R28])
 
 
 
-
+print("##Affichage de la grammaire initiale :")
 G6.printGrammar()
 #G_modified = G2.unnecessaryVar()
 
 G_modified = G6.unitsProductions()
-#print(len(G_modified.productions))
-print()
+print("##Affichage de la grammaire après avoir supprimé les productions unitaires ")
 G_modified.printGrammar()
 
 
